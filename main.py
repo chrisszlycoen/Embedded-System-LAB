@@ -178,3 +178,7 @@ def main():
                                 balance = int.from_bytes(bytes(block_data[:4]), 'big')
                                 print("Card detected: {} | Bal: {}".format(uid_str, balance))
                                 
+                                # Publish status
+                                client.publish(STATUS_TOPIC, json.dumps({
+                                    "uid": uid_str,
+                                    "balance": balance
