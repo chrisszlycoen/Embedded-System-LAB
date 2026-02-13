@@ -142,3 +142,7 @@ def on_mqtt_message(topic, msg):
 
 # ===================== MAIN PROGRAM =====================
 def main():
+    connect_wifi()
+
+    # Create MQTT client
+    global client
