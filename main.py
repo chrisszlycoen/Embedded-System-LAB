@@ -194,3 +194,7 @@ def main():
             
             elif last_card_present:
                 # Card was present, now gone
+                print("Card removed")
+                client.publish(STATUS_TOPIC, json.dumps({"uid": None}))
+                last_card_present = False
+            
