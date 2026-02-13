@@ -58,3 +58,7 @@ def connect_wifi():
 # ===================== MQTT RECONNECT LOGIC =====================
 def mqtt_connect(client):
     while True:
+        try:
+            print("Attempting MQTT connection...")
+            client.connect()
+            print("MQTT connected successfully!")
