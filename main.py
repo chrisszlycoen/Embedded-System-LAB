@@ -82,3 +82,7 @@ def on_mqtt_message(topic, msg):
             return
         
         print("Top-up command received -> UID: {}, Amount: {}".format(target_uid, amount))
+
+        # Check if card is present and UID matches
+        (status, uid) = reader.request(reader.REQIDL)
+        if status != reader.OK:
