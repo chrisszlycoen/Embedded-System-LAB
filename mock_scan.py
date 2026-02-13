@@ -18,3 +18,7 @@ client.loop_start()
 time.sleep(1)
 
 # 1. Simulate Card Scan
+print(">>> Simulating Card SCAN...")
+uid = "A1 B2 C3 D4"
+client.publish(TOPIC_STATUS, json.dumps({
+    "uid": uid,
