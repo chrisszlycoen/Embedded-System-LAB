@@ -50,3 +50,7 @@ def connect_wifi():
             timeout -= 1
             print(".", end="")
     
+    if wlan.isconnected():
+        print("\nWiFi connected:", wlan.ifconfig())
+    else:
+        print("\nWiFi connection FAILED - check SSID/password")
