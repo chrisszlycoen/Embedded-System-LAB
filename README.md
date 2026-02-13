@@ -10,3 +10,7 @@ This project has been configured to run **completely locally** on your computer 
 ## 1. Setup Backend (Broker + Server)
 The `server.js` file now includes its own MQTT broker (running on port 1883).
 
+1.  Open terminal in project folder:
+    ```bash
+    npm install express mqtt ws cors body-parser aedes
+    ```
