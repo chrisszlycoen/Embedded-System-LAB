@@ -110,3 +110,7 @@ def on_mqtt_message(topic, msg):
             return
         
         # Read current balance
+        block_data = reader.read(BLOCK_NUMBER)
+        if block_data is None:
+            print("Read failed")
+            reader.stop_crypto1()
