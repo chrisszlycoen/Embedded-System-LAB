@@ -162,3 +162,7 @@ def main():
             client.check_msg()
             
             # Scan for card
+            (status, uid) = reader.request(reader.REQIDL)
+            
+            if status == reader.OK:
+                (status, uid) = reader.anticoll()
