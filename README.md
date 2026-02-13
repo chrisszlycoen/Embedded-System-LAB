@@ -18,3 +18,7 @@ The `server.js` file now includes its own MQTT broker (running on port 1883).
     ```bash
     node server.js
     ```
+    You should see:
+    > [Broker] MQTT Broker running on port 1883
+    > [HTTP] Server running on http://localhost:3000
+
