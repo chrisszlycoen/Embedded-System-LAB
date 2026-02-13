@@ -26,3 +26,7 @@ SCK_PIN   = 14   # D5
 MOSI_PIN  = 13   # D7
 MISO_PIN  = 12   # D6
 RST_PIN   = 4    # D2
+CS_PIN    = 15   # D8
+
+# Balance storage on card (MIFARE Classic 1K)
+BLOCK_NUMBER = 8
