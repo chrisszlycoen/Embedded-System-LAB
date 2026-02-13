@@ -398,3 +398,7 @@
 
             // HANDLE AUTO-RESET (Card Removed)
             if (data.uid === null) {
+                if (!debounceTimer) {
+                    debounceTimer = setTimeout(() => {
+                        currentUid = null;
+                        cardUidEl.innerText = "SCANNING...";
