@@ -6,3 +6,7 @@ This project has been configured to run **completely locally** on your computer 
 - Node.js installed.
 - ESP8266 + MFRC522 (RC522) module.
 - A computer and ESP8266 connected to the **same WiFi network**.
+
+## 1. Setup Backend (Broker + Server)
+The `server.js` file now includes its own MQTT broker (running on port 1883).
+
