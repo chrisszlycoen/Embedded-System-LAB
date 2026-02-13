@@ -34,3 +34,7 @@ You need to tell the ESP8266 the IP address of your computer.
       ```python
       MQTT_BROKER = "192.168.1.105" # Example
       ```
+    - Start the script on ESP8266.
+
+## 3. Run Dashboard
+1.  Open `index.html` in your browser.
