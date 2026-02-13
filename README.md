@@ -14,3 +14,7 @@ The `server.js` file now includes its own MQTT broker (running on port 1883).
     ```bash
     npm install express mqtt ws cors body-parser aedes
     ```
+2.  Start the server:
+    ```bash
+    node server.js
+    ```
