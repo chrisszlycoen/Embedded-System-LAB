@@ -102,3 +102,7 @@ def on_mqtt_message(topic, msg):
         # Authenticate
         if reader.select_tag(uid) != reader.OK:
             print("Select tag failed")
+            return
+
+        if reader.auth(reader.AUTHENT1A, BLOCK_NUMBER, DEFAULT_KEY, uid) != reader.OK:
+            print("Authentication failed")
