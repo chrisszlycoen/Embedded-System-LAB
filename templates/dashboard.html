@@ -386,3 +386,7 @@
             const toast = document.getElementById('toast');
             toast.classList.remove('translate-x-full');
             setTimeout(() => toast.classList.add('translate-x-full'), 3000);
+        }
+
+        let debounceTimer = null;
+        let lastHistoryUid = null;
