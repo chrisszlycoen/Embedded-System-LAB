@@ -390,3 +390,7 @@
 
         let debounceTimer = null;
         let lastHistoryUid = null;
+        let lastHistoryTime = 0;
+
+        socket.on('update_dashboard', function (data) {
+            console.log("RX:", data);
