@@ -442,3 +442,7 @@
             if (data.balance !== undefined || data.new_balance !== undefined) {
                 // Prevent duplicate "Check" logs for same UID within 5 seconds
                 // Always allow Top-Ups (new_balance)
+                if (data.new_balance === undefined &&
+                    data.uid === lastHistoryUid &&
+                    (Date.now() - lastHistoryTime < 5000)) {
+                    return; // Skip duplicate log
