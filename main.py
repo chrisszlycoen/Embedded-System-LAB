@@ -34,3 +34,7 @@ DEFAULT_KEY  = [0xFF] * 6
 
 # ===================== RFID READER INIT =====================
 reader = MFRC522(SCK_PIN, MOSI_PIN, MISO_PIN, RST_PIN, CS_PIN)
+
+# ===================== NETWORK FUNCTIONS =====================
+def connect_wifi():
+    wlan = network.WLAN(network.STA_IF)
