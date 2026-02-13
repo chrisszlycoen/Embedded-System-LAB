@@ -90,3 +90,7 @@ def on_mqtt_message(topic, msg):
             pass
 
         (status, uid) = reader.anticoll()
+        if status != reader.OK:
+            print("No card present")
+            return
+        
