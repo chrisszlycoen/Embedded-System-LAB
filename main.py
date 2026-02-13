@@ -134,3 +134,7 @@ def on_mqtt_message(topic, msg):
                 "uid": current_uid,
                 "new_balance": new_balance
             }))
+        
+        reader.stop_crypto1()
+        
+    except Exception as e:
