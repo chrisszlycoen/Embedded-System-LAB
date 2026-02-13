@@ -106,3 +106,7 @@ def on_mqtt_message(topic, msg):
 
         if reader.auth(reader.AUTHENT1A, BLOCK_NUMBER, DEFAULT_KEY, uid) != reader.OK:
             print("Authentication failed")
+            reader.stop_crypto1()
+            return
+        
+        # Read current balance
