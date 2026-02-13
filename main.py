@@ -114,3 +114,7 @@ def on_mqtt_message(topic, msg):
         if block_data is None:
             print("Read failed")
             reader.stop_crypto1()
+            return
+        
+        # Parse Balance (Big Endian 4 bytes)
+        current_balance = int.from_bytes(bytes(block_data[:4]), 'big')
