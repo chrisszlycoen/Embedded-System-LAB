@@ -202,3 +202,7 @@ def main():
             
         except Exception as e:
             print("Main loop error:", e)
+            time.sleep(2)
+            # Reconnect if needed logic could go here, but referenced script keeps it simple
+
+if __name__ == "__main__":
