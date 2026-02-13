@@ -26,3 +26,7 @@ The `server.js` file now includes its own MQTT broker (running on port 1883).
 You need to tell the ESP8266 the IP address of your computer.
 
 1.  **Find your IP Address**:
+    - Windows: Run `ipconfig` in CMD. Look for `IPv4 Address` (e.g., `192.168.1.105`).
+    - Linux/Mac: Run `ip a` or `ifconfig`. Look for `inet` address (e.g., `192.168.1.105`).
+2.  **Edit `main.py`**:
+    - Open `main.py` in Thonny.
