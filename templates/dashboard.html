@@ -382,3 +382,7 @@
             document.getElementById('amount').value = '';
         }
 
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-x-full');
+            setTimeout(() => toast.classList.add('translate-x-full'), 3000);
