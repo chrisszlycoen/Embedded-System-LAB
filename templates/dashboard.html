@@ -450,3 +450,7 @@
 
                 const bal = data.balance !== undefined ? data.balance : data.new_balance;
 
+                // Animate numbers
+                animateValue(balanceEl, parseInt(balanceEl.innerText), bal, 1000);
+
+                // Add to history
