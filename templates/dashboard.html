@@ -514,3 +514,7 @@
                     body: JSON.stringify({ uid: currentUid, amount: parseInt(amount) })
                 });
 
+                if (response.ok) {
+                    clearInput();
+                    // Let the socket update the UI
+                }
