@@ -502,3 +502,7 @@
         }
 
         async function sendTopup() {
+            const amount = document.getElementById('amount').value;
+
+            if (cardUidEl.innerText === "SCANNING...") return alert("Please scan a card first!");
+            if (!amount) return alert("Enter an amount.");
