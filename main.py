@@ -62,3 +62,7 @@ def mqtt_connect(client):
             print("Attempting MQTT connection...")
             client.connect()
             print("MQTT connected successfully!")
+            client.subscribe(TOPUP_TOPIC)
+            print("Subscribed to: {}".format(TOPUP_TOPIC))
+            return True
+        except OSError as e:
