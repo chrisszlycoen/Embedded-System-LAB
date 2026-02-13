@@ -22,3 +22,7 @@ The `server.js` file now includes its own MQTT broker (running on port 1883).
     > [Broker] MQTT Broker running on port 1883
     > [HTTP] Server running on http://localhost:3000
 
+## 2. Configure ESP8266
+You need to tell the ESP8266 the IP address of your computer.
+
+1.  **Find your IP Address**:
