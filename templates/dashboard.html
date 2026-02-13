@@ -454,3 +454,7 @@
                 animateValue(balanceEl, parseInt(balanceEl.innerText), bal, 1000);
 
                 // Add to history
+                addHistoryItem(now, data.uid || currentUid, bal, data.new_balance !== undefined);
+
+                // Update history tracker
+                if (data.new_balance === undefined) {
