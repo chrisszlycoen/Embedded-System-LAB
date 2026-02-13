@@ -150,3 +150,7 @@ def main():
     client.set_callback(on_mqtt_message)
 
     # Connect with retry
+    mqtt_connect(client)
+
+    print("System ready. Scanning for RFID cards...")
+
