@@ -86,3 +86,7 @@ def on_mqtt_message(topic, msg):
         # Check if card is present and UID matches
         (status, uid) = reader.request(reader.REQIDL)
         if status != reader.OK:
+            # Try anticoll directly just in case
+            pass
+
+        (status, uid) = reader.anticoll()
