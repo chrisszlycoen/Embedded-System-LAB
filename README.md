@@ -30,3 +30,7 @@ You need to tell the ESP8266 the IP address of your computer.
     - Linux/Mac: Run `ip a` or `ifconfig`. Look for `inet` address (e.g., `192.168.1.105`).
 2.  **Edit `main.py`**:
     - Open `main.py` in Thonny.
+    - Change `MQTT_BROKER` to your computer's IP:
+      ```python
+      MQTT_BROKER = "192.168.1.105" # Example
+      ```
