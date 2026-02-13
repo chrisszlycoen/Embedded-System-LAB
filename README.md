@@ -2,3 +2,7 @@
 
 This project has been configured to run **completely locally** on your computer without any external VPS or public MQTT broker.
 
+## Prerequisites
+- Node.js installed.
+- ESP8266 + MFRC522 (RC522) module.
+- A computer and ESP8266 connected to the **same WiFi network**.
