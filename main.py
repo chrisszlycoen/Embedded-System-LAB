@@ -122,3 +122,7 @@ def on_mqtt_message(topic, msg):
         
         # Write new balance
         # Convert new balance to 4 bytes, append original data for the rest of block
+        new_data = list(new_balance.to_bytes(4, 'big')) + block_data[4:]
+        
+        if reader.write(BLOCK_NUMBER, new_data) != reader.OK:
+            print("Write failed")
