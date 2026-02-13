@@ -174,3 +174,7 @@ def main():
                     if reader.select_tag(uid) == reader.OK:
                         if reader.auth(reader.AUTHENT1A, BLOCK_NUMBER, DEFAULT_KEY, uid) == reader.OK:
                             block_data = reader.read(BLOCK_NUMBER)
+                            if block_data:
+                                balance = int.from_bytes(bytes(block_data[:4]), 'big')
+                                print("Card detected: {} | Bal: {}".format(uid_str, balance))
+                                
