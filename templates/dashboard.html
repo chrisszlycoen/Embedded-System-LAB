@@ -478,3 +478,7 @@
                 <div>
                     <p class="text-white font-mono">${uid}</p>
                     <p class="text-gray-500 scale-90 origin-left">${time}</p>
+                </div>
+                <div class="text-right">
+                    <p class="font-bold ${isTopup ? 'text-gold' : 'text-blue-400'} text-sm">${isTopup ? '+' : ''}${amount}</p>
+                    <p class="text-[10px] text-gray-600 uppercase">${isTopup ? 'TOP-UP' : 'CHECK'}</p>
