@@ -38,3 +38,7 @@ mqtt_client.loop_start()
 def index():
     return render_template('dashboard.html')
 
+@app.route('/topup', methods=['POST'])
+def handle_topup():
+    data = request.json
+    mqtt_client.publish(TOPIC_TOPUP, json.dumps(data))
