@@ -42,3 +42,7 @@ def index():
 def handle_topup():
     data = request.json
     mqtt_client.publish(TOPIC_TOPUP, json.dumps(data))
+    return jsonify({"status": "Command sent to device"})
+
+if __name__ == '__main__':
+    socketio.run(app, host='0.0.0.0', port=9252, allow_unsafe_werkzeug=True)
