@@ -18,3 +18,7 @@ MQTT_CLIENT_ID  = b"esp8266_" + ubinascii.hexlify(machine.unique_id())
 # MQTT Topics
 BASE_TOPIC      = "rfid/{}/".format(TEAM_ID)
 STATUS_TOPIC    = BASE_TOPIC + "card/status"      
+TOPUP_TOPIC     = BASE_TOPIC + "card/topup"       
+BALANCE_TOPIC   = BASE_TOPIC + "card/balance"     
+
+# RFID pins - YOUR exact wiring (Preserved from original code888 request)
