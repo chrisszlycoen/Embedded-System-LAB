@@ -138,3 +138,7 @@ def on_mqtt_message(topic, msg):
         reader.stop_crypto1()
         
     except Exception as e:
+        print("Error processing top-up:", e)
+
+# ===================== MAIN PROGRAM =====================
+def main():
