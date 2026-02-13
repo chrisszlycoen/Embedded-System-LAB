@@ -198,3 +198,7 @@ def main():
                 client.publish(STATUS_TOPIC, json.dumps({"uid": None}))
                 last_card_present = False
             
+            time.sleep(0.4)  # Reasonable loop delay
+            
+        except Exception as e:
+            print("Main loop error:", e)
