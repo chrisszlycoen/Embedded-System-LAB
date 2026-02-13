@@ -30,3 +30,6 @@ time.sleep(3)
 print(">>> Simulating Card REMOVAL...")
 client.publish(TOPIC_STATUS, json.dumps({"uid": None}))
 
+time.sleep(1)
+client.loop_stop()
+print("Done.")
