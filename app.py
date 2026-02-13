@@ -14,3 +14,7 @@ TOPIC_TOPUP = f"rfid/{TEAM_ID}/card/topup"
 TOPIC_BALANCE = f"rfid/{TEAM_ID}/card/balance"
 
 def on_connect(client, userdata, flags, rc, properties=None):
+    print(f"Connected to MQTT with result code {rc}")
+    client.subscribe(TOPIC_STATUS)
+    client.subscribe(TOPIC_BALANCE)
+
