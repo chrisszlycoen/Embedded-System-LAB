@@ -78,3 +78,7 @@ def on_mqtt_message(topic, msg):
         amount = data.get("amount", 0)
         
         if amount <= 0:
+            print("Invalid amount received")
+            return
+        
+        print("Top-up command received -> UID: {}, Amount: {}".format(target_uid, amount))
