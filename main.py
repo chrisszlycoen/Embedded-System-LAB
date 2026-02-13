@@ -46,3 +46,7 @@ def connect_wifi():
         
         timeout = 20
         while not wlan.isconnected() and timeout > 0:
+            time.sleep(1)
+            timeout -= 1
+            print(".", end="")
+    
