@@ -438,3 +438,7 @@
                     document.getElementById('card-container').style.transform = "rotateY(0) rotateX(0)";
                 }, 500);
             }
+
+            if (data.balance !== undefined || data.new_balance !== undefined) {
+                // Prevent duplicate "Check" logs for same UID within 5 seconds
+                // Always allow Top-Ups (new_balance)
