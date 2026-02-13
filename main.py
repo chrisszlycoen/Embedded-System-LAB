@@ -130,3 +130,7 @@ def on_mqtt_message(topic, msg):
             print("Balance updated: {} -> {}".format(current_balance, new_balance))
             
             # Publish updated balance
+            client.publish(BALANCE_TOPIC, json.dumps({
+                "uid": current_uid,
+                "new_balance": new_balance
+            }))
