@@ -54,3 +54,7 @@ def connect_wifi():
         print("\nWiFi connected:", wlan.ifconfig())
     else:
         print("\nWiFi connection FAILED - check SSID/password")
+
+# ===================== MQTT RECONNECT LOGIC =====================
+def mqtt_connect(client):
+    while True:
