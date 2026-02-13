@@ -34,3 +34,7 @@ mqtt_client.on_message = on_message
 mqtt_client.connect(MQTT_BROKER, 1883, 60)
 mqtt_client.loop_start()
 
+@app.route('/')
+def index():
+    return render_template('dashboard.html')
+
