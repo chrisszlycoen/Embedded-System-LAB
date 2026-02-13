@@ -466,3 +466,7 @@
             if (data.new_balance !== undefined) {
                 showToast();
             }
+        });
+
+        function addHistoryItem(time, uid, amount, isTopup) {
+            if (activityList.innerText.includes("NO TRANSACTIONS")) activityList.innerHTML = "";
