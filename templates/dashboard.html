@@ -406,3 +406,7 @@
                         statusMsg.classList.add('animate-pulse');
                         statusMsg.classList.remove('text-green-400');
                         balanceEl.innerText = "0";
+
+                        // Add idle animation
+                        activityList.classList.add('idle-scroll');
+                        debounceTimer = null;
