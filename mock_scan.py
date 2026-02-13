@@ -14,3 +14,7 @@ client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
 client.on_connect = on_connect
 client.connect(BROKER, 1883, 60)
 client.loop_start()
+
+time.sleep(1)
+
+# 1. Simulate Card Scan
