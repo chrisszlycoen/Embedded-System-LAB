@@ -182,3 +182,7 @@ def main():
                                 client.publish(STATUS_TOPIC, json.dumps({
                                     "uid": uid_str,
                                     "balance": balance
+                                }))
+                            else:
+                                print("Failed to read block")
+                        else:
