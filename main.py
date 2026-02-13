@@ -154,3 +154,7 @@ def main():
 
     print("System ready. Scanning for RFID cards...")
 
+    last_card_present = False
+
+    while True:
+        try:
