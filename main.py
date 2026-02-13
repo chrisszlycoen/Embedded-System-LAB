@@ -70,3 +70,7 @@ def mqtt_connect(client):
             print("Retrying in 5 seconds...")
             time.sleep(5)
 
+# ===================== TOP-UP HANDLER =====================
+def on_mqtt_message(topic, msg):
+    try:
+        data = json.loads(msg)
