@@ -38,3 +38,7 @@ reader = MFRC522(SCK_PIN, MOSI_PIN, MISO_PIN, RST_PIN, CS_PIN)
 # ===================== NETWORK FUNCTIONS =====================
 def connect_wifi():
     wlan = network.WLAN(network.STA_IF)
+    wlan.active(True)
+    
+    if not wlan.isconnected():
+        print("Connecting to WiFi...")
