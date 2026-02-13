@@ -42,3 +42,7 @@ You need to tell the ESP8266 the IP address of your computer.
 3.  Scan a card!
 
 ## Wiring Table (RC522 -> ESP8266)
+
+| RC522 Pin | ESP8266 Pin | Description |
+|-----------|-------------|-------------|
+| SDA (SS)  | D8 (GPIO15) | Chip Select |
