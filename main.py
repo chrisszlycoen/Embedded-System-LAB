@@ -166,3 +166,7 @@ def main():
             
             if status == reader.OK:
                 (status, uid) = reader.anticoll()
+                if status == reader.OK:
+                    uid_str = "".join("{:02X}".format(x) for x in uid)
+                    last_card_present = True
+                    
