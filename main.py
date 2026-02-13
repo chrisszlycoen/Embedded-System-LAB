@@ -126,3 +126,7 @@ def on_mqtt_message(topic, msg):
         
         if reader.write(BLOCK_NUMBER, new_data) != reader.OK:
             print("Write failed")
+        else:
+            print("Balance updated: {} -> {}".format(current_balance, new_balance))
+            
+            # Publish updated balance
