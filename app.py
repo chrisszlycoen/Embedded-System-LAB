@@ -26,3 +26,7 @@ def on_message(client, userdata, msg):
         socketio.emit('update_dashboard', payload)
     except Exception as e:
         print(f"Error parsing MQTT message: {e}")
+
+mqtt_client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
+mqtt_client.on_connect = on_connect
+mqtt_client.on_message = on_message
