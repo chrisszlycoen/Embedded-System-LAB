@@ -66,3 +66,7 @@ def mqtt_connect(client):
             print("Subscribed to: {}".format(TOPUP_TOPIC))
             return True
         except OSError as e:
+            print("MQTT connect failed:", e)
+            print("Retrying in 5 seconds...")
+            time.sleep(5)
+
