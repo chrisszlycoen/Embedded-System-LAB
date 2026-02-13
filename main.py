@@ -74,3 +74,7 @@ def mqtt_connect(client):
 def on_mqtt_message(topic, msg):
     try:
         data = json.loads(msg)
+        target_uid = data.get("uid")
+        amount = data.get("amount", 0)
+        
+        if amount <= 0:
