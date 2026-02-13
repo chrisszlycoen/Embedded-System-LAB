@@ -186,3 +186,7 @@ def main():
                             else:
                                 print("Failed to read block")
                         else:
+                            print("Auth failed for reading")
+                    else:
+                        print("Select failed")
+                    
