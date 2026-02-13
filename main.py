@@ -42,3 +42,7 @@ def connect_wifi():
     
     if not wlan.isconnected():
         print("Connecting to WiFi...")
+        wlan.connect(WIFI_SSID, WIFI_PASSWORD)
+        
+        timeout = 20
+        while not wlan.isconnected() and timeout > 0:
