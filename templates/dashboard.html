@@ -506,3 +506,7 @@
 
             if (cardUidEl.innerText === "SCANNING...") return alert("Please scan a card first!");
             if (!amount) return alert("Enter an amount.");
+
+            try {
+                const response = await fetch('/topup', {
+                    method: 'POST',
