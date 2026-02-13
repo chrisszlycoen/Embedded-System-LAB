@@ -98,3 +98,7 @@ def on_mqtt_message(topic, msg):
         if current_uid != target_uid:
             print("UID mismatch (card: {}, requested: {})".format(current_uid, target_uid))
             return
+        
+        # Authenticate
+        if reader.select_tag(uid) != reader.OK:
+            print("Select tag failed")
