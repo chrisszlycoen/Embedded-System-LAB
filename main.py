@@ -170,3 +170,7 @@ def main():
                     uid_str = "".join("{:02X}".format(x) for x in uid)
                     last_card_present = True
                     
+                    # Try to read balance
+                    if reader.select_tag(uid) == reader.OK:
+                        if reader.auth(reader.AUTHENT1A, BLOCK_NUMBER, DEFAULT_KEY, uid) == reader.OK:
+                            block_data = reader.read(BLOCK_NUMBER)
