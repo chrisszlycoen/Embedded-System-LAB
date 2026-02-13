@@ -22,3 +22,7 @@ print(">>> Simulating Card SCAN...")
 uid = "A1 B2 C3 D4"
 client.publish(TOPIC_STATUS, json.dumps({
     "uid": uid,
+    "balance": random.randint(1000, 50000)
+}))
+time.sleep(3)
+
