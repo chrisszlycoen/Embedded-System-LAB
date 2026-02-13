@@ -206,3 +206,4 @@ def main():
             # Reconnect if needed logic could go here, but referenced script keeps it simple
 
 if __name__ == "__main__":
+    main()
