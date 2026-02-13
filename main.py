@@ -158,3 +158,7 @@ def main():
 
     while True:
         try:
+            # Check for incoming MQTT messages (top-ups)
+            client.check_msg()
+            
+            # Scan for card
