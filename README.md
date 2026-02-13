@@ -46,3 +46,7 @@ You need to tell the ESP8266 the IP address of your computer.
 | RC522 Pin | ESP8266 Pin | Description |
 |-----------|-------------|-------------|
 | SDA (SS)  | D8 (GPIO15) | Chip Select |
+| SCK       | D5 (GPIO14) | Clock       |
+| MOSI      | D7 (GPIO13) | MOSI        |
+| MISO      | D6 (GPIO12) | MISO        |
+| RST       | D2 (GPIO4)  | Reset       |
