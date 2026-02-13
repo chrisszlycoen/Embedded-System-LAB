@@ -190,3 +190,7 @@ def main():
                     else:
                         print("Select failed")
                     
+                    reader.stop_crypto1()
+            
+            elif last_card_present:
+                # Card was present, now gone
