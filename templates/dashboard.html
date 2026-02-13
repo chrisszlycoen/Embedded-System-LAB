@@ -418,3 +418,7 @@
 
             if (data.uid) {
                 // Cancel pending reset if card reappears
+                if (debounceTimer) {
+                    clearTimeout(debounceTimer);
+                    debounceTimer = null;
+                }
