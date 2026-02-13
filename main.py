@@ -94,3 +94,7 @@ def on_mqtt_message(topic, msg):
             print("No card present")
             return
         
+        current_uid = "".join("{:02X}".format(x) for x in uid)
+        if current_uid != target_uid:
+            print("UID mismatch (card: {}, requested: {})".format(current_uid, target_uid))
+            return
