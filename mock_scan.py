@@ -10,3 +10,7 @@ TOPIC_STATUS = f"rfid/{TEAM_ID}/card/status"
 def on_connect(client, userdata, flags, rc, properties=None):
     print(f"Connected to MQTT (RC: {rc})")
 
+client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
+client.on_connect = on_connect
+client.connect(BROKER, 1883, 60)
+client.loop_start()
