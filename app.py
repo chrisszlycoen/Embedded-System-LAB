@@ -18,3 +18,7 @@ def on_connect(client, userdata, flags, rc, properties=None):
     client.subscribe(TOPIC_STATUS)
     client.subscribe(TOPIC_BALANCE)
 
+def on_message(client, userdata, msg):
+    try:
+        payload = json.loads(msg.payload.decode())
+        print(f"Received MQTT: {payload}")
