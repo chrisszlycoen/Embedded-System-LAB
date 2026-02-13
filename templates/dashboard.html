@@ -394,3 +394,7 @@
 
         socket.on('update_dashboard', function (data) {
             console.log("RX:", data);
+            const now = new Date().toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+            // HANDLE AUTO-RESET (Card Removed)
+            if (data.uid === null) {
