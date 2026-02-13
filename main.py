@@ -146,3 +146,7 @@ def main():
 
     # Create MQTT client
     global client
+    client = MQTTClient(MQTT_CLIENT_ID, MQTT_BROKER, MQTT_PORT)
+    client.set_callback(on_mqtt_message)
+
+    # Connect with retry
