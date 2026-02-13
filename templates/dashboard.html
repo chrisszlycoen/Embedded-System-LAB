@@ -458,3 +458,7 @@
 
                 // Update history tracker
                 if (data.new_balance === undefined) {
+                    lastHistoryUid = data.uid || currentUid;
+                    lastHistoryTime = Date.now();
+                }
+            }
