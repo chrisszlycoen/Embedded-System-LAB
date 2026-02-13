@@ -118,3 +118,7 @@ def on_mqtt_message(topic, msg):
         
         # Parse Balance (Big Endian 4 bytes)
         current_balance = int.from_bytes(bytes(block_data[:4]), 'big')
+        new_balance = current_balance + int(amount)
+        
+        # Write new balance
+        # Convert new balance to 4 bytes, append original data for the rest of block
