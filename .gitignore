@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Dependencies
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Deployment & Utility Scripts
+deploy_helper.py
+git_commit_generator.py
+rebuild_history.py
+app.tar.gz
+app.log

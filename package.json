@@ -1,0 +1,21 @@
+{
+  "name": "rfid",
+  "version": "1.0.0",
+  "description": "This project has been configured to run **completely locally** on your computer without any external VPS or public MQTT broker.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aedes": "^1.0.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mqtt": "^5.15.0",
+    "socket.io": "^4.8.3",
+    "ws": "^8.19.0"
+  }
+}
