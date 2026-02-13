@@ -22,3 +22,7 @@ TOPUP_TOPIC     = BASE_TOPIC + "card/topup"
 BALANCE_TOPIC   = BASE_TOPIC + "card/balance"     
 
 # RFID pins - YOUR exact wiring (Preserved from original code888 request)
+SCK_PIN   = 14   # D5
+MOSI_PIN  = 13   # D7
+MISO_PIN  = 12   # D6
+RST_PIN   = 4    # D2
