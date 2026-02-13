@@ -426,3 +426,7 @@
                 currentUid = data.uid;
                 cardUidEl.innerText = data.uid.match(/.{1,2}/g).join(' '); // Format: AA BB CC DD
                 statusMsg.innerText = "CARD AUTHENTICATED";
+                statusMsg.classList.remove('animate-pulse');
+                statusMsg.classList.add('text-green-400');
+
+                // Stop idle animation
