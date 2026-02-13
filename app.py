@@ -22,3 +22,7 @@ def on_message(client, userdata, msg):
     try:
         payload = json.loads(msg.payload.decode())
         print(f"Received MQTT: {payload}")
+        
+        socketio.emit('update_dashboard', payload)
+    except Exception as e:
+        print(f"Error parsing MQTT message: {e}")
