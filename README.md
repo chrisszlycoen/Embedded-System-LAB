@@ -50,3 +50,6 @@ You need to tell the ESP8266 the IP address of your computer.
 | MOSI      | D7 (GPIO13) | MOSI        |
 | MISO      | D6 (GPIO12) | MISO        |
 | RST       | D2 (GPIO4)  | Reset       |
+| 3.3V      | 3V3         | Power       |
+| GND       | GND         | Ground      |
+
