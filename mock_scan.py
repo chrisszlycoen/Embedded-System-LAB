@@ -26,3 +26,7 @@ client.publish(TOPIC_STATUS, json.dumps({
 }))
 time.sleep(3)
 
+# 2. Simulate Card Removal
+print(">>> Simulating Card REMOVAL...")
+client.publish(TOPIC_STATUS, json.dumps({"uid": None}))
+
