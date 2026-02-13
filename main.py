@@ -30,3 +30,7 @@ CS_PIN    = 15   # D8
 
 # Balance storage on card (MIFARE Classic 1K)
 BLOCK_NUMBER = 8
+DEFAULT_KEY  = [0xFF] * 6
+
+# ===================== RFID READER INIT =====================
+reader = MFRC522(SCK_PIN, MOSI_PIN, MISO_PIN, RST_PIN, CS_PIN)
