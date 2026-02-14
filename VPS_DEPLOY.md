@@ -1,14 +1,14 @@
 # RFID System - VPS Deployment Guide
 
-**Target VPS**: `157.173.101.159`
-**User**: `user272`
-**Password**: `ZK!@9QM7`
+**Target VPS**: `xxx.xxx.xxx.xxx`
+**User**: `userXXX`
+**Password**: `XXXXXX`
 
 ## 1. Connect to VPS
 Open your terminal and run:
 ```bash
-ssh user272@157.173.101.159
-# Enter password: ZK!@9QM7
+ssh userXXX@xxx.xxx.xxx.xxx
+# Enter password: XXXXXX
 ```
 
 ## 2. Install Node.js (If not installed)
@@ -45,14 +45,14 @@ nohup node server.js > server.log 2>&1 &
 ## 4. Setup Frontend (Optional, or run locally)
 Since checking the dashboard from your local computer:
 1.  Open `index.html` on your **local computer**.
-2.  Ensure the "Backend URL" input is `http://157.173.101.159:3000`.
+2.  Ensure the "Backend URL" input is `http://xxx.xxx.xxx.xxx:3000`.
 3.  Click "Set".
 
 *Note: You can also serve file on VPS using `python3 -m http.server 9252` if you want a hosted link.*
 
 ## 5. Flash ESP8266
 1.  Open `main.py` in Thonny.
-2.  Ensure `MQTT_BROKER = "157.173.101.159"`.
+2.  Ensure `MQTT_BROKER = "xxx.xxx.xxx.xxx"`.
 3.  Flash/Run.
 
 ## Troubleshooting
