@@ -3,8 +3,8 @@ import json
 import time
 import random
 
-BROKER = "157.173.101.159"
-TEAM_ID = "code888"
+BROKER = "xxx.xxx.xxx.xxx"
+TEAM_ID = "Any_team_id"
 TOPIC_STATUS = f"rfid/{TEAM_ID}/card/status"
 
 def on_connect(client, userdata, flags, rc, properties=None):
