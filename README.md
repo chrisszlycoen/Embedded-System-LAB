@@ -39,7 +39,8 @@ You need to tell the ESP8266 the IP address of your computer.
 ## 3. Run Dashboard
 1.  Open `index.html` in your browser.
 2.  It defaults to `localhost:3000`.
-3.  Scan a card!
+3.  The deployment link `http://157.173.101.159:9252/`
+4.  Scan a card!
 
 ## Wiring Table (RC522 -> ESP8266)
 
