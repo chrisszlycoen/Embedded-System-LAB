@@ -13,7 +13,5 @@ node_modules/
 
 # Deployment & Utility Scripts
 deploy_helper.py
-git_commit_generator.py
-rebuild_history.py
 app.tar.gz
 app.log
